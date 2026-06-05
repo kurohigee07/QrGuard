@@ -1,0 +1,6 @@
+{
+  "name": "QR Guard Scanner",
+  "description": "A secure hybrid native QR Code scanner utilizing glassmorphism elegance, offline forensic history, sandboxed iframe rendering, and real-time malicious binary extension parsing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

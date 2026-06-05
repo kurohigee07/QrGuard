@@ -1,0 +1,109 @@
+/* ==========================================
+   STYLE.CSS - Theme Animasi & Estetika Luxury
+   ========================================== */
+
+/* Glassmorphism subtle glow & drop shadow */
+.glass-glow {
+    background: rgba(20, 12, 36, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 32px 0 rgba(10, 4, 30, 0.37);
+    border: 1px solid rgba(139, 92, 246, 0.15);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-glow:hover {
+    border-color: rgba(139, 92, 246, 0.3);
+    box-shadow: 0 12px 40px 0 rgba(139, 92, 246, 0.1);
+}
+
+/* Custom minimal scrollbar for modern aesthetics */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a0512;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2e1d4d;
+    border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+/* Scrollbar specifically within our history log overflow box */
+#history-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+#history-list::-webkit-scrollbar-track {
+    background: rgba(17, 10, 31, 1);
+    border-radius: 8px;
+}
+
+#history-list::-webkit-scrollbar-thumb {
+    background: #1e1336;
+    border-radius: 8px;
+}
+
+#history-list::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+/* Animasi khusus blink-warning (efek neon merah kedip-kedip kencang) */
+@keyframes blink-alert {
+    0%, 100% {
+        border-color: #ef4444;
+        box-shadow: 0 0 10px rgba(239, 68, 68, 0.3), inset 0 0 10px rgba(239, 68, 68, 0.2);
+        background-color: rgba(239, 68, 68, 0.12);
+    }
+    50% {
+        border-color: #7f1d1d;
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.75), inset 0 0 20px rgba(239, 68, 68, 0.4);
+        background-color: rgba(127, 29, 29, 0.45);
+    }
+}
+
+.blink-warning {
+    animation: blink-alert 0.8s infinite ease-in-out;
+}
+
+/* Custom frame sizing for html5-qrcode renderer container */
+#reader {
+    width: 100% !important;
+    height: 100% !important;
+    border: none !important;
+}
+
+/* Hide some unwanted child elements rendered automatically by html5-qrcode defaults */
+#reader video {
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 1rem !important;
+}
+
+#reader img {
+    display: none !important;
+}
+
+#reader__status_span {
+    font-size: 11px !important;
+    color: #a78bfa !important;
+    font-family: monospace !important;
+}
+
+/* Success glow badge */
+.badge-success-glow {
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.4);
+}
+
+/* Threat glow badge */
+.badge-danger-glow {
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.5);
+}
